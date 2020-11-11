@@ -1,5 +1,5 @@
 const request = require('request');
-const token = require('../.tokens.bin');
+const token = require('../../.tokens.bin');
 
 const forecast = (latitude, longitude, callback) => {
     const url = 'http://api.weatherstack.com/current?access_key=' + token.weatherToken + '&query=' + 
